@@ -92,7 +92,7 @@
             <strong>Uncertainty-aware Observation Reinjection for Vision-Language-Action Models</strong>
           </h2>
           <h3 class="subtitle is-4 publication-subtitle" style="font-weight: bold; margin-bottom: 20px;">
-            ICML 2026
+            arXiv 2026
           </h3>
 
           <div class="is-size-5 publication-authors" style="width: 100%; margin: 15px auto;">
@@ -236,6 +236,13 @@
             We introduce <strong>Action Entropy</strong>, a VLA-specific metric that quantifies layer-wise uncertainty via the entropy of action-related output distributions. For each transformer layer, we project FFN outputs through the LM Head and compute entropy over action/condition tokens. Higher action entropy indicates greater uncertainty, reflecting the model's gradual "forgetting" of observation information during forward inference.
           </p>
 
+          <div class="box" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="content has-text-centered">
+              <img src="static/images/entropy.png" alt="Layer-wise Uncertainty" width="100%" style="max-width: 1200px; height: auto;"/>
+              <p>Layer-wise uncertainty of OpenVLA-OFT across four LIBERO task suites. The dashed red line denotes the chosen uncertainty threshold &gamma;, while the green segment highlights the last 16 layers.</p>
+            </div>
+          </div>
+
           <h4 class="title is-5 mt-5 mb-3">Observation Reinjection with FFN</h4>
           <p>
             When uncertainty at layer &ell; exceeds a threshold &gamma;, we reinject observation features into the FFN of the subsequent layer (&ell;+1). Concretely, we treat the encoded observation features as a key-value memory. We use the hidden states entering the FFN at layer &ell;+1 as queries to attend over this memory via an activation-weighted retrieval. The retrieved features are then blended with the original FFN output using a blending ratio &alpha;. This allows the model to dynamically "re-attend" to the observation when confusion arises, without halting or backtracking the inference.
@@ -274,7 +281,7 @@
 
           <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
             <div class="content has-text-centered">
-              <img src="static/images/RLBench.png" alt="LIBERO Results" width="100%" style="max-width: 1200px; height: auto;"/>
+              <img src="static/images/LIBERO.png" alt="LIBERO Results" width="100%" style="max-width: 1200px; height: auto;"/>
               <p>Table 1: Performance comparison on the LIBERO benchmark.</p>
             </div>
           </div>
@@ -383,7 +390,7 @@
 
           <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
             <div class="content has-text-centered">
-              <img src="static/images/COLOSSEUM.png" alt="SIMPLER Results" width="100%" style="max-width: 1200px; height: auto;"/>
+              <img src="static/images/SIMPLER.png" alt="SIMPLER Results" width="100%" style="max-width: 1200px; height: auto;"/>
               <p>Table 2: Performance comparison on the SIMPLER benchmark.</p>
             </div>
           </div>
@@ -397,7 +404,7 @@
 
           <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
             <div class="content has-text-centered">
-              <img src="static/images/GemBench.png" alt="CALVIN Results" width="100%" style="max-width: 1200px; height: auto;"/>
+              <img src="static/images/CALVIN.png" alt="CALVIN Results" width="100%" style="max-width: 1200px; height: auto;"/>
               <p>Table 3: Performance comparison on the CALVIN benchmark.</p>
             </div>
           </div>
@@ -414,8 +421,15 @@
 
           <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
             <div class="content has-text-centered">
+              <img src="static/images/real_robot_setup.png" alt="Real-World Setup" width="100%" style="max-width: 800px; height: auto;"/>
+              <p>Real-world setup: Franka Research 3 robot arm with ZED 2i camera and 3D mouse.</p>
+            </div>
+          </div>
+
+          <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
+            <div class="content has-text-centered">
               <img src="static/images/real.png" alt="Real-World Results" width="100%" style="max-width: 1200px; height: auto;"/>
-              <p>Figure 3: Real-world setup and results.</p>
+              <p>Figure 3: Real-world evaluation results on both OpenVLA-OFT and CogACT.</p>
             </div>
           </div>
 
