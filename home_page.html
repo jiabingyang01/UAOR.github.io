@@ -6,7 +6,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <title> BridgeVLA </title>
+  <title> UAOR </title>
 
   <link rel="icon" href="./static/images/logo.png">
 
@@ -18,36 +18,20 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="stylesheet" href="./static/css/leaderboard.css">
   <link rel="stylesheet" href="./static/css/video-player.css">
-
-  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/explorer-index.js"></script>
-  <script src="./static/js/question_card.js"></script>
-
-  <script src="./static/js/leaderboard_testmini.js"></script>  
-  <script src="./data/results/output_folders.js" defer></script>
-  <script src="./data/results/model_scores.js" defer></script>
-
-  <script src="./visualizer/data/data_public.js" defer></script>
 
   <style>
-    .no-sort {
-        cursor: default;
-        pointer-events: none;
-        background-image: none !important; /* Remove the sort arrow */
-    }
-
-    .title-bridgevla {
+    .title-uaor {
       font-family: 'Playfair Display', serif;
       font-size: 2.2em;
       font-weight: 700;
-      background: linear-gradient(45deg, #2196F3, #4CAF50);
+      background: linear-gradient(45deg, #E65100, #FF8F00);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -60,18 +44,18 @@
       padding-bottom: 0.2em;
     }
 
-    .title-bridgevla::after {
+    .title-uaor::after {
       content: '';
       position: absolute;
       bottom: -22px;
       left: 0;
       width: 100%;
       height: 2px;
-      background: linear-gradient(45deg, #2196F3, #4CAF50);
+      background: linear-gradient(45deg, #E65100, #FF8F00);
       border-radius: 2px;
     }
 
-    .title-bridgevla img {
+    .title-uaor img {
       width: 1.5em;
       filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
     }
@@ -79,8 +63,6 @@
 
 </head>
 <body>
-
-  
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
@@ -92,32 +74,9 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <p style="font-size:18px; display: inline; margin-right: -2px; margin-top: 12px;">🔥</p>
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://gr1-manipulation.github.io/">
-            <b>GR-1</b> 
-          </a>
-          <a class="navbar-item" href="https://gr-mg.github.io/">
-            <b>GR-MG</b> 
-          </a>
-          <a class="navbar-item" href="https://gr2-manipulation.github.io/">
-            <b>GR-2</b> 
-          </a>
-          <a class="navbar-item" href="https://robovlms.github.io/">
-            <b>RoboVLMs</b> 
-          </a>
-        </div>
-      </div>
     </div>
-
   </div>
 </nav>
-
 
 
 <section class="hero">
@@ -127,50 +86,50 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title is-bold">
             <img src="static/images/logo.png" style="width:2.5em;vertical-align: middle" alt="Logo"/>
-            <span class="bridgevla" style="vertical-align: middle;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">BridgeVLA</span>
-            </h1>
-          <h2 class="subtitle is-3 publication-subtitle ", style="width: 100%;margin-bottom: 20px;">
-            <strong>Input-Output Alignment for Efficient 3D Manipulation Learning with Vision-Language Models</strong>
+            <span class="bridgevla" style="vertical-align: middle;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">UAOR</span>
+          </h1>
+          <h2 class="subtitle is-3 publication-subtitle" style="width: 100%;margin-bottom: 20px;">
+            <strong>Uncertainty-aware Observation Reinjection for Vision-Language-Action Models</strong>
           </h2>
-          <h3 class="subtitle is-4 publication-subtitle" style="font-weight: bold; margin-bottom: 10px;">
-            NeurIPS 2025
-          </h3>
           <h3 class="subtitle is-4 publication-subtitle" style="font-weight: bold; margin-bottom: 20px;">
-            🏆 COLOSSEUM Challenge Champion @ CVPR 2025 GRAIL Workshop
+            ICML 2026
           </h3>
-          
-          
-          <div class="is-size-5 publication-authors", style="width: 100%; margin: 15px auto;", >
-            <span class="author-block"><a href="https://github.com/LPY1219" target="_blank" style="color: black;">Peiyan Li</a>,<sup>1</sup><sup>,</sup><sup>2</sup><sup>,</sup><sup>3</sup><sup>,</sup><sup>†</sup></span>
-            <span class="author-block"><a href="https://github.com/YixiangChen515" target="_blank" style="color: black;">Yixiang Chen</a>,<sup>1</sup><sup>,</sup><sup>3</sup></span>
-            <span class="author-block"><a href="https://scholar.google.com/citations?user=7u0TYgIAAAAJ&hl=zh-CN&oi=ao" target="_blank" style="color: black;">Hongtao Wu</a>,<sup>2</sup><sup>,</sup><sup>†</sup><sup>,</sup><sup>*</sup></span>
-            <span class="author-block"><a href="https://yusufma03.github.io/" target="_blank" style="color: black;">Xiao Ma</a>,<sup>2</sup><sup>,</sup><sup>†</sup></span>
-            <span class="author-block"><a href="https://bridgevla.github.io/" target="_blank" style="color: black;">Xiangnan Wu</a>,<sup>1</sup></span>
-            <br>
-            <span class="author-block"><a href="https://yanrockhuang.github.io/" target="_blank" style="color: black;">Yan Huang</a>,<sup>1</sup><sup>,</sup><sup>3</sup><sup>,</sup><sup>4</sup></span>
-            <span class="author-block"><a href="https://scholar.google.com/citations?hl=zh-CN&user=8kzzUboAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" style="color: black;">Liang Wang</a>,<sup>1</sup><sup>,</sup><sup>3</sup></span>
-            <span class="author-block"><a href="https://www.taokong.org/" target="_blank" style="color: black;">Tao Kong</a>,<sup>2</sup></span>
-            <span class="author-block"><a href="https://scholar.google.com/citations?hl=en&user=W-FGd_UAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" style="color: black;">Tieniu Tan</a>,<sup>1</sup><sup>,</sup><sup>3</sup><sup>,</sup><sup>5</sup><sup>,</sup><sup>*</sup></span>
-        </div>
 
-        <div class="is-size-5 publication-authors", style=" margin: 10px auto;", >
-          <span class="author-block"><sup>†</sup>Project Lead,</span>
-          <span class="author-block"><sup>*</sup>Corresponding Author</span>
-        </div>
+          <div class="is-size-5 publication-authors" style="width: 100%; margin: 15px auto;">
+            <span class="author-block"><a href="mailto:yangjiabing2025@ia.ac.cn" target="_blank" style="color: black;">Jiabing Yang</a><sup>1,2</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Yixiang Chen</a><sup>1,2</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Yuan Xu</a><sup>1,2</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Peiyan Li</a><sup>1,2</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Xiangnan Wu</a><sup>1,2</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Zichen Wen</a><sup>3</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Bowen Fang</a><sup>1,2</sup></span>
+            <br>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Tao Yu</a><sup>1,2</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Zhengbo Zhang</a><sup>1,2</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Yingda Li</a><sup>1,2</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Kai Wang</a><sup>1,2</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Jing Liu</a><sup>4</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Nianfeng Liu</a><sup>4</sup></span>
+            <span class="author-block"><a href="mailto:yhuang@nlpr.ia.ac.cn" target="_blank" style="color: black;">Yan Huang</a><sup>1,2,4,&dagger;</sup></span>
+            <span class="author-block"><a href="#" target="_blank" style="color: black;">Liang Wang</a><sup>1,2</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors" style="margin: 10px auto;">
+            <span class="author-block"><sup>&dagger;</sup>Corresponding Author</span>
+          </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>CASIA,</span>
-            <span class="author-block"><sup>2</sup>Bytedance Seed,</span>
-            <span class="author-block"><sup>3</sup>UCAS,</span>
-            <span class="author-block"><sup>4</sup>FiveAges,</span>
-            <span class="author-block"><sup>5</sup>NJU</span>
+            <span class="author-block"><sup>1</sup>School of AI, UCAS,</span>
+            <span class="author-block"><sup>2</sup>NLPR, CASIA,</span>
+            <span class="author-block"><sup>3</sup>Shanghai Jiao Tong University,</span>
+            <span class="author-block"><sup>4</sup>FiveAges</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2506.07961"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv" style="color: #B31B1B;"></i>
@@ -180,68 +139,15 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/BridgeVLA/BridgeVLA"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://huggingface.co/datasets/LPY/BridgeVLA/tree/main"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <!-- <i class="far fa-huggingface"></i> -->
-                      <p style="font-size:18px">🤗</p>
-                  </span>
-                  <span>Dataset</span>
-                </a>
-              </span> 
-              <!-- Checkpoint Link. -->
-              <span class="link-block">
-                <a href="https://huggingface.co/datasets/LPY/BridgeVLA/tree/main/checkpoints"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <p style="font-size:18px"><i class="fas fa-robot" style="color: #2196F3;"></i></p>
-                  </span>
-                  <span>Checkpoints</span>
+                  <span>Code (Coming Soon)</span>
                 </a>
               </span>
-              <!-- X (Twitter) Link. -->
-              <span class="link-block">
-                <a href="https://x.com/PYL78055244/status/1934635507365163393"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <span style="font-size: 18px; font-weight: bold; color: #FFFFFF;">𝕏</span>
-                  </span>
-                  <span>X</span>
-                </a>
-              </span>
-              <!-- Talk Link. -->
-              <span class="link-block">
-                <a href="https://www.bilibili.com/video/BV1pt81zdEe7/?spm_id_from=333.337.search-card.all.click&vd_source=cfe83a7cac71209ab43d99b965fed771"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <span style="font-size: 18px; color: #FB7299;">📺</span>
-                  </span>
-                  <span>Talk</span>
-                </a>
-              </span>
-              <!-- 机器之心 Link. -->
-              <span class="link-block">
-                <a href="https://mp.weixin.qq.com/s/rNBNqgj5UMvVvwPjWr_Gew"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <img src="static/images/jiqizhixin.png" style="width: 18px; height: 18px;" alt="机器之心"/>
-                  </span>
-                  <span>机器之心</span>
-                </a>
-              </span>
-
             </div>
-
           </div>
         </div>
       </div>
@@ -255,14 +161,14 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <div class="tldr-box" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); 
-                                    border-left: 5px solid #4a90e2; 
-                                    padding: 20px; 
-                                    border-radius: 8px; 
+        <div class="tldr-box" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+                                    border-left: 5px solid #E65100;
+                                    padding: 20px;
+                                    border-radius: 8px;
                                     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
           <h2 class="title is-4" style="color: #2c3e50; margin-bottom: 10px;">TL;DR:</h2>
           <p class="is-size-5" style="color: #34495e; line-height: 1.6;">
-            We propose a 3D VLA framework that aligns the input and output within a shared 2D space in both pre-training and fine-tuning, enabling strong data efficiency and achieves impressive performance in both basic and generalization settings.
+            We propose <strong>UAOR</strong>, a <em>training-free</em> and <em>plug-and-play</em> module for VLA models. When the model exhibits high uncertainty (measured by <strong>Action Entropy</strong>), it reinjects observation features into the next layer's FFN through attention retrieval, enabling more confident and faithful action generation.
           </p>
         </div>
       </div>
@@ -270,22 +176,6 @@
   </div>
 </section>
 
-<!-- Video Section -->
-<div style="display: flex; justify-content: center; margin: 40px 0;">
-  <div style="width: 80%; max-width: 900px;">
-    <div style="box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; background: #fff;">
-      <iframe 
-        width="100%" 
-        height="506" 
-        src="https://www.youtube.com/embed/kG1MVh9eP78" 
-        title="BridgeVLA Demo Video" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-</div>
 
 <section class="section">
   <div class="container" style="margin-bottom: 2vh;">
@@ -294,27 +184,20 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          Recently, leveraging pre-trained vision-language models (VLMs) for building vision-language-action (VLA) models has emerged as a promising approach to effective robot manipulation learning.
-          However, existing methods predominantly process 2D inputs, excluding the valuable 3D information. 
-          While some recent studies suggest injecting 3D signals into the VLM for action prediction, they overlook the spatial structure inherent in 3D data, leading to low sample efficiency. 
-          In this paper, we introduce BridgeVLA, a novel 3D VLA model that (1) project 3D inputs to multiple 2D images, ensuring input alignment with the VLM backbone, 
-          and (2) utilize 2D heatmaps for action prediction, unifying the input and output spaces within a consistent 2D image space. 
-          In addition, we propose a scalable pre-training method that equips the VLM backbone with the capability to predict 2D heatmaps for object grounding before downstream policy learning.
-          Extensive experiments show the proposed method is able to learn 3D manipulation efficiently and effectively.
-          BridgeVLA outperforms the state-of-the-art baselines across multiple benchmarks. 
-          In RLBench, it attains a substantially higher success rate (88.2% vs. 81.4%). 
-          In COLOSSEUM, it demonstrates significantly better performance (64.0% vs. 56.7%) in the challenge generalization scenes.
-          In GemBench, it is the only method that achieves a 50% average success rate across all four evaluation settings.
-          In real-robot experiments, BridgeVLA outperforms the state-of-the-art baseline method by 32% on average, and is able to generalize robustly in multiple out-of-distribution settings,
-          including visual disturbance and unseen instructions.
-          Remarkably, it is able to achieve a success rate of 96.8% on 10+ tasks with with only 3 trajectories per task, highlighting its extraordinary sample efficiency.
+          Vision-Language-Action (VLA) models leverage pretrained Vision-Language Models (VLMs)
+          as backbones to map images and instructions to actions, demonstrating remarkable potential
+          for generalizable robotic manipulation. To enhance performance, existing methods often incorporate extra observation cues (e.g., depth maps, point clouds) or auxiliary modules (e.g., object detectors, encoders) to enable more precise and reliable task execution, yet these typically require costly data collection and additional training.
+          Inspired by the finding that Feed-Forward Network (FFN) in language models can act as "key-value memory", we propose <strong>Uncertainty-aware Observation Reinjection (UAOR)</strong>, an effective, training-free and plug-and-play module for VLA models.
+          Specifically, when the current language model layer exhibits high uncertainty, measured by <strong>Action Entropy</strong>, it reinjects key observation information into the next layer's Feed-Forward Network (FFN) through attention retrieval. This mechanism helps VLAs better attend to observations during inference, enabling more confident and faithful action generation.
+          Comprehensive experiments show that our method consistently improves diverse VLA models across simulation and real-world tasks with minimal overhead. Notably, UAOR eliminates the need for additional observation cues or modules, making it a versatile and practical plug-in for existing VLA pipelines.
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
-</div>
+  </div>
 </section>
 
+<!-- Figure 1: Overview -->
 <section class="section" style="padding-top: 0;">
   <div class="container">
     <div class="columns is-centered">
@@ -322,14 +205,14 @@
         <div class="content has-text-justified">
           <div class="box" style="margin-top: 0; margin-bottom: 1rem;">
             <div class="content has-text-centered">
-              <img src="static/images/teaser.png" alt="grade-lv" width="100%" style="max-width: 1200px; height: auto;"/>
-              <p>Figure 1: Overview of BridgeVLA</p>
+              <img src="static/images/teaser.png" alt="UAOR Overview" width="100%" style="max-width: 1200px; height: auto;"/>
+              <p>Figure 1: Overall framework of UAOR. We compute action entropy at layer &ell; to estimate uncertainty. If it exceeds a threshold &gamma;, we reinject observation features into the next layer's FFN via a key-value retrieval mechanism.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 </section>
 
 <!-- METHOD SECTION -->
@@ -340,37 +223,37 @@
   </h1>
   </div>
 </section>
-            
+
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
-          <p>As illustrated in Fig. 2, BridgeVLA employs a dual-phase training recipe.</p>
-        
-          <h4 class="title is-5 mt-5 mb-3">2D Heatmap Pre-training</h4>
+          <p>UAOR is a lightweight, training-free module designed to boost VLA models. It introduces two key components:</p>
+
+          <h4 class="title is-5 mt-5 mb-3">Uncertainty Measured by Action Entropy</h4>
           <p>
-            We train BridgeVLA on 2D object detection datasets. The model takes as input an image and language describing the target object and outputs a 2D heatmap which highlights regions of interest that correspond to the target object.
+            We introduce <strong>Action Entropy</strong>, a VLA-specific metric that quantifies layer-wise uncertainty via the entropy of action-related output distributions. For each transformer layer, we project FFN outputs through the LM Head and compute entropy over action/condition tokens. Higher action entropy indicates greater uncertainty, reflecting the model's gradual "forgetting" of observation information during forward inference.
           </p>
-        
-          <h4 class="title is-5 mt-5 mb-3">3D Action Fine-tuning</h4>
+
+          <h4 class="title is-5 mt-5 mb-3">Observation Reinjection with FFN</h4>
           <p>
-            The model takes as input three orthographic projection images of a 3D point cloud and a language instruction. It outputs three 2D heatmaps, which highlight the position of the end-effector in the next keyframe across all three views. For the remaining action components, it uses an MLP to aggregate the image feature tokens to predict the rotation action, gripper action, and collision flag of the next keyframe.
+            When uncertainty at layer &ell; exceeds a threshold &gamma;, we reinject observation features into the FFN of the subsequent layer (&ell;+1). Concretely, we treat the encoded observation features as a key-value memory. We use the hidden states entering the FFN at layer &ell;+1 as queries to attend over this memory via an activation-weighted retrieval. The retrieved features are then blended with the original FFN output using a blending ratio &alpha;. This allows the model to dynamically "re-attend" to the observation when confusion arises, without halting or backtracking the inference.
           </p>
-        
+
           <div class="box" style="margin-top: 2rem; margin-bottom: 2rem;">
             <div class="content has-text-centered">
-              <img src="static/images/network.png" alt="grade-lv" width="100%" style="max-width: 1200px; height: auto;"/>
-              <p>Figure 2: Network architecture of BridgeVLA</p>
+              <img src="static/images/network.png" alt="UAOR Architecture" width="100%" style="max-width: 1200px; height: auto;"/>
+              <p>Figure 2: Detailed architecture of UAOR</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 </section>
 
-<!-- Simulation-->
+<!-- Simulation Experiments -->
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
     <h1 class="title is-1 mathvista_other">Simulation Experiments</h1>
@@ -382,685 +265,205 @@
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="content">
-          <h2 class="title is-3 has-text-centered">RLBench</h2>
+
+          <!-- LIBERO Section -->
+          <h2 class="title is-3 has-text-centered">LIBERO</h2>
           <p class="has-text-justified">
-            To test our model's ability to deal with complex manipulation tasks, we evaluate BridgeVLA on RLBench, a benchmark implemented in CoppeliaSim using a Franka Panda robot mounted
-            with a parallel-jaw gripper. Totally, we choose 18 tasks from RLBench, and each task is provided with 100 expert demonstrations.
-            And each demonstration is paired with language instruction and multiple keyframes. Models are evaluated via binary success rates over 25 trials per task,
-            with a maximum of 25 action steps per trial. The results are shown in Tab. 1.
-          </p>
-          <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
-            <div class="content has-text-centered">
-              <img src="static/images/RLBench.png" alt="grade-lv" width="100%" style="max-width: 1200px; height: auto;"/>
-              <p>Table 1: Results on RLBench.</p>
-            </div>
-          </div>
-
-          <!-- RLBench Videos -->
-          <h3 class="title is-4 has-text-centered">RLBench Task Demonstrations</h3>
-          
-          <!-- Row 1 -->
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/RLBench/stack_4_rose_blocks_success_0.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Stack 4 Rose Blocks</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/RLBench/put_the_chocolate_jello_in_the_cupboard_success_1.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Put Chocolate Jello in Cupboard</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/RLBench/place_3_cups_on_the_cup_holder_success_3.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Place 3 Cups on Cup Holder</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 2 -->
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/RLBench/close_the_blue_jar_success_8.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Close Blue Jar</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/RLBench/sweep_dirt_to_the_short_dustpan_success_10.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Sweep Dirt to Dustpan</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/RLBench/screw_in_the_lime_light_bulb_success_12.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Screw in Lime Light Bulb</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 3 -->
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/RLBench/put_the_money_away_in_the_safe_on_the_top_shelf_success_12.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Put Money in Safe</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/RLBench/take_the_steak_off_the_grill_success_15.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Take Steak off Grill</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/RLBench/stack_the_other_cups_on_top_of_the_navy_cup_success_18.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Stack Cups on Navy Cup</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- COLOSSEUM Section -->
-          <h2 class="title is-3 has-text-centered">COLOSSEUM</h2>
-          <p class="has-text-justified">
-            To systematically evaluate the generalization capabilities of BridgeVLA, we further evaluate on the COLOSSEUM benchmark. 
-            The COLOSSEUM benchmark is an extension to the RLBench benchmark. 
-            The model is trained on the data from the original RLBench benchmark but evaluated in environments spanning 12 axes of perturbations. 
-            These perturbations, which are unseen during training, encompass changes in object texture, color, and size, backgrounds, lighting,
-            distractors and camera poses. Specifically, our evaluation includes three steps: 
-            1) train the model with the original RLBench data without perturbations (100 trajectories per task) on 20 tasks,
-            2) evaluate each task over 25 trials per perturbation,
-            3) compute the average success rate of all evaluated tasks for every perturbation.
-            Besides the 12 types of perturbations, we also evaluate on basic variations from the original RLBench (denoted as RLBench in Tab. 2),
-            and a more challenging setting which combines all the 12 types of perturbations (denoted as All Perturbations in Tab. 2).
+            We evaluate UAOR on the LIBERO benchmark, which provides 4 task suites&mdash;Spatial, Object, Goal, and Long&mdash;each containing 10 tasks with 50 human-teleoperated demonstrations per task. We apply UAOR to two representative baselines: OpenVLA-OFT (7B) and &pi;<sub>0</sub> (3B). UAOR delivers consistent gains across all four suites: based on OpenVLA-OFT, it achieves a remarkable average success rate of <strong>98.0%</strong> (+0.9), comparable to 3D-CAVLA (98.1%) but without auxiliary depth inputs, CoT reasoning, or fine-tuning. It also boosts &pi;<sub>0</sub> by <strong>+1.5</strong> points on average.
           </p>
 
           <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
             <div class="content has-text-centered">
-              <img src="static/images/COLOSSEUM.png" alt="grade-lv" width="100%" style="max-width: 1200px; height: auto;"/>
-              <p>Table 2: Results on COLOSSEUM.</p>
+              <img src="static/images/RLBench.png" alt="LIBERO Results" width="100%" style="max-width: 1200px; height: auto;"/>
+              <p>Table 1: Performance comparison on the LIBERO benchmark.</p>
             </div>
           </div>
 
-          <!-- COLOSSEUM Videos -->
-          <h3 class="title is-4 has-text-centered">COLOSSEUM Task Demonstrations</h3>
-          
-          <!-- Row 1 -->
+          <!-- LIBERO Videos -->
+          <h3 class="title is-4 has-text-centered">LIBERO Task Demonstrations (OpenVLA-OFT w/ UAOR)</h3>
+
+          <!-- Row 1: Spatial -->
+          <h4 class="title is-5 has-text-centered" style="margin-bottom: 0.5rem;">LIBERO-Spatial</h4>
           <div class="columns is-multiline">
-            <div class="column is-one-third">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/scoop_with_spatula_11_scoop_up_the_cube_and_lift_it_with_the_spatula_success_2.mp4" type="video/mp4">
+                  <source src="static/videos/LIBERO/LIBERO-Spatial-pick up the black bowl from table center and place it on the plate.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Scoop with Spatula</p>
+                <p class="has-text-centered">Pick up the black bowl from table center and place it on the plate</p>
               </div>
             </div>
-            <div class="column is-one-third">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/insert_onto_square_peg_put_the_ring_on_the_red_spoke_success_0.mp4" type="video/mp4">
+                  <source src="static/videos/LIBERO/LIBERO-Spatial-pick up the black bowl on the wooden cabinet and place it on the plate.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Insert onto Square Peg</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/close_laptop_lid_2_close_laptop_lid_success_9.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Close Laptop Lid</p>
+                <p class="has-text-centered">Pick up the black bowl on the wooden cabinet and place it on the plate</p>
               </div>
             </div>
           </div>
 
-          <!-- Row 2 -->
+          <!-- Row 2: Object -->
+          <h4 class="title is-5 has-text-centered" style="margin-bottom: 0.5rem;">LIBERO-Object</h4>
           <div class="columns is-multiline">
-            <div class="column is-one-third">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/move_hanger_move_hanger_onto_the_other_rackmove_the_hanger_from_one_rack_to_the_other_success_0.mp4" type="video/mp4">
+                  <source src="static/videos/LIBERO/LIBERO-Object-pick up the alphabet soup and place it in the basket.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Move Hanger</p>
+                <p class="has-text-centered">Pick up the alphabet soup and place it in the basket</p>
               </div>
             </div>
-            <div class="column is-one-third">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/basketball_in_hoop_put_the_ball_in_the_hoop_success_0.mp4" type="video/mp4">
+                  <source src="static/videos/LIBERO/LIBERO-Object-pick up the orange juice and place it in the basket.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Basketball in Hoop</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/reach_and_drag_10_use_the_stick_to_drag_the_cube_onto_the_red_target_success_13.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Reach and Drag</p>
+                <p class="has-text-centered">Pick up the orange juice and place it in the basket</p>
               </div>
             </div>
           </div>
 
-          <!-- Row 3 -->
+          <!-- Row 3: Goal -->
+          <h4 class="title is-5 has-text-centered" style="margin-bottom: 0.5rem;">LIBERO-Goal</h4>
           <div class="columns is-multiline">
-            <div class="column is-one-third">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/straighten_rope_straighten_rope_success_0.mp4" type="video/mp4">
+                  <source src="static/videos/LIBERO/LIBERO-Goal-open the middle drawer of the cabinet.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Straighten Rope</p>
+                <p class="has-text-centered">Open the middle drawer of the cabinet</p>
               </div>
             </div>
-            <div class="column is-one-third">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/turn_oven_on_1_turn_on_the_oven_success_16.mp4" type="video/mp4">
+                  <source src="static/videos/LIBERO/LIBERO-Goal-put the wine bottle on the rack.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Turn Oven On</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/hockey_1_hit_the_ball_into_the_net_success_2.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Hockey Hit</p>
+                <p class="has-text-centered">Put the wine bottle on the rack</p>
               </div>
             </div>
           </div>
 
-          <!-- Row 4 -->
-          <!-- <div class="columns is-multiline">
-            <div class="column is-one-third">
+          <!-- Row 4: Long -->
+          <h4 class="title is-5 has-text-centered" style="margin-bottom: 0.5rem;">LIBERO-Long</h4>
+          <div class="columns is-multiline">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/put_money_in_safe_put_the_money_away_in_the_safe_on_the_bottom_shelf_success_1.mp4" type="video/mp4">
+                  <source src="static/videos/LIBERO/LIBERO-Long-put both the alphabet soup and the tomato sauce in the basket.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Put Money in Safe</p>
+                <p class="has-text-centered">Put both the alphabet soup and the tomato sauce in the basket</p>
               </div>
             </div>
-            <div class="column is-one-third">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/place_wine_at_rack_location_stack_the_wine_bottle_to_the_middle_of_the_rack_success_1.mp4" type="video/mp4">
+                  <source src="static/videos/LIBERO/LIBERO-Long-put the yellow and white mug in the microwave and close it.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Place Wine at Rack</p>
+                <p class="has-text-centered">Put the yellow and white mug in the microwave and close it</p>
               </div>
             </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/COLOSSEUM/variations/get_ice_from_fridge_get_ice_from_fridge_success_1.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Get Ice from Fridge</p>
-              </div>
-            </div>
-          </div> -->
+          </div>
 
 
-          <!-- GemBench Section -->
-          <h2 class="title is-3 has-text-centered">GemBench</h2>
+          <!-- SIMPLER Section -->
+          <h2 class="title is-3 has-text-centered" style="margin-top: 2rem;">SIMPLER</h2>
           <p class="has-text-justified">
-          To more comprehensively assess the generalization ability of our proposed method, we evaluate BridgeVLA on GemBench, 
-          a comprehensive hierarchical benchmark built on the RLBench simulator. 
-          GemBench is designed to rigorously test 3D manipulation policies across a wide range of scenarios, 
-          covering 60 tasks and 123 variations organized into four progressively challenging levels—from simple novel placements to complex multi-step tasks 
-          involving novel object shapes and articulations. BridgeVLA demonstrates outstanding performance, achieving the highest average success rate across all evaluation levels. 
-          Notably, it sets new state-of-the-art results in both the L2 (novel rigid objects) and L3 (novel articulated objects) settings,
-          where generalization to unseen object shapes and part combinations is particularly challenging. We show the results in Tab. 3.
+            We evaluate UAOR on the SIMPLER benchmark using CogACT (7B) as the baseline. UAOR raises the average success rate by <strong>+2.6</strong> points (73.1 &rarr; 75.7; ~3.6% relative). The improvements are most evident on Pick coke can (+2.7), Open top drawer and place apple (+3.7), and Move near (+3.4), with a smaller gain on Open/Close drawer (+0.9). These tasks demand precise localization and placement under visual clutter.
           </p>
 
           <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
             <div class="content has-text-centered">
-              <img src="static/images/GemBench.png" alt="grade-lv" width="100%" style="max-width: 1200px; height: auto;"/>
-              <p>Table 3: Results on GemBench.</p>
+              <img src="static/images/COLOSSEUM.png" alt="SIMPLER Results" width="100%" style="max-width: 1200px; height: auto;"/>
+              <p>Table 2: Performance comparison on the SIMPLER benchmark.</p>
             </div>
           </div>
 
-          <!-- GemBench Videos -->
-          <h3 class="title is-4 has-text-centered">GemBench Task Demonstrations</h3>
-          
-          <!-- Row 1 -->
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/gembench/stack_blocks_sample.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Stack Blocks</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/gembench/stack_cups_sample.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Stack Cups</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/gembench/put_money_in_safe_sample.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Put Money in Safe</p>
-              </div>
-            </div>
-          </div>
 
-          <!-- Row 2 -->
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/gembench/close_laptoplid_sample.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Close Laptop Lid</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/gembench/close_microwave_sample.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Close Microwave</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/gembench/close_grill_sample.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Close Grill</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 3 -->
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/gembench/push_button_sample.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Push Button</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/gembench/take_shoe_out_of_box_sample.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Take Shoe Out of Box</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/gembench/toilet_seat_up_sample.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Toilet Seat Up</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Real -->
-          <h2 class="title is-3 has-text-centered">Real-World Experiments</h2>
+          <!-- CALVIN Section -->
+          <h2 class="title is-3 has-text-centered" style="margin-top: 2rem;">CALVIN</h2>
           <p class="has-text-justified">
-            We conduct real-robot experiments to further verify our model's performance. A total of 13 manipulation tasks are evaluated, covering a spectrum from simple pick-and-place to long-horizon behaviors such as opening a drawer and placing objects inside.
-          </p>
-
-          <h4 class="title is-5 mt-5 mb-3">Evaluation Settings</h4>
-          <p class="has-text-justified">
-            To systematically evaluate the robustness and generalization of BridgeVLA, we design seven distinct settings:
-          </p>
-
-          <div class="ml-4">
-            <p class="has-text-justified mb-3">
-              <strong>Basic:</strong> Tasks are evaluated under the same environmental conditions as training. This setting serves as a sanity check to ensure the model performs well under familiar conditions.
-            </p>
-
-            <p class="has-text-justified mb-3">
-              <strong>Distractor:</strong> Visually similar but irrelevant objects are added to the workspace. These distractors share shape or color characteristics with target objects, testing the model's ability to distinguish targets amid ambiguity.
-            </p>
-
-            <p class="has-text-justified mb-3">
-              <strong>Lighting:</strong> The robot operates under significantly different illumination, such as turning off overhead lights, to test robustness to lighting changes that affect the appearance of the scene.
-            </p>
-
-            <p class="has-text-justified mb-3">
-              <strong>Background:</strong> The visual background is altered by changing tablecloths (three variants in total), assessing the model's invariance to background textures and colors.
-            </p>
-
-            <p class="has-text-justified mb-3">
-              <strong>Height:</strong> All manipulable objects are placed on a raised surface (a drawer 9.5 cm above the base level), requiring the model to adapt its control to new object elevations.
-            </p>
-
-            <p class="has-text-justified mb-3">
-              <strong>Combination:</strong> Novel combinations of known objects and skills are introduced. While both the objects (e.g., a red block and green plate) and the manipulation skill (e.g., place A in B) are present in the training data, the pairing is new (e.g., "place the red block in the green plate"), challenging the model to generalize to unseen instructions.
-            </p>
-
-            <p class="has-text-justified mb-3">
-              <strong>Category:</strong> The model is asked to manipulate entirely unseen object categories during training. Seven such objects are introduced to evaluate whether pretrained visual-linguistic knowledge enables effective zero-shot generalization.
-            </p>
-          </div>
-
-          <h4 class="title is-5 mt-5 mb-3">Results</h4>
-          <p class="has-text-justified">
-            In addition to the full model, we compare against RVT-2, the strongest simulation baseline, and an ablated variant of BridgeVLA without our proposed 2D-heatmap pretraining.
-            The results are shown in Fig. 4.
-            BridgeVLA outperforms both baselines in six of the seven settings, and maintains high robustness under visual disturbances (Distractor, Background).
-          </p>
-
-          <p class="has-text-justified">
-            Furthermore, it achieves a 96.8% success rate in the Basic setting even with only 3 training trajectories per task, showing remarkable data efficiency. The results also validate the effectiveness of our 2D-heatmap pretraining in connecting language and vision for compositional task generalization.
+            We evaluate on the CALVIN ABC&rarr;D benchmark using LLaVA-VLA (0.5B). UAOR improves success on every track and increases the average consecutive completion length by <strong>+0.12</strong> (3.55 &rarr; 3.67; ~3.4% relative). The consistent gains across progressively longer task chains indicate better maintenance of observation fidelity, leading to reduced uncertainty in downstream action prediction.
           </p>
 
           <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
             <div class="content has-text-centered">
-              <img src="static/images/real.png" alt="grade-lv" width="100%" style="max-width: 1200px; height: auto;"/>
-              <p>Figure 4: Real-robot setup and results.</p>
+              <img src="static/images/GemBench.png" alt="CALVIN Results" width="100%" style="max-width: 1200px; height: auto;"/>
+              <p>Table 3: Performance comparison on the CALVIN benchmark.</p>
             </div>
           </div>
 
-          <h3 class="title is-4 has-text-centered">Background</h3>
-          
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/real_reduce_size/background/background_place_the_red_block_in_the_blue_plate_1_41_caption.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Place red block in blue plate</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/real_reduce_size/background/background_put_the_RedBull_can_in_the_top_shelf_2_40_caption.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Put RedBull can on top shelf</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/real_reduce_size/background/background_put_the_zebra_in_the_upper_drawer_3_70_caption.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Put zebra in upper drawer</p>
-              </div>
-            </div>
-          </div>
 
-          <!-- Lighting Section -->
-          <h3 class="title is-4 has-text-centered">Lighting</h3>
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/lighting/illumination_put_the_RedBull_can_in_the_top_shelf_2_34_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Put RedBull can on bottom shelf</p>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/lighting/illumination_press_sanitizer_2_16_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Press sanitizer</p>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/lighting/illumination_put_the_giraffe_in_the_lower_drawer_1_69_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Put giraffe in lower drawer</p>
-                </div>
-            </div>
-          </div>
-
-          <!-- Distractor Section -->
-          <h3 class="title is-4 has-text-centered">Distractor</h3>
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/distractor/Disturbance_place_the_orange_block_in_the_green_plate_2_42_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Place orange block in green plate</p>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/distractor/Disturbance_put_the_giraffe_in_the_lower_drawer_1_71_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Put giraffe in lower drawer</p>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/distractor/Disturbance_press_sanitizer_1_16_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Press sanitizer</p>
-                </div>
-            </div>
-          </div>
-
-          <!-- Combination Section -->
-          <h3 class="title is-4 has-text-centered">Combination</h3>
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/combination/combination_put_the_orange_block_in_the_lower_drawer_1_74_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Put orange block in lower drawer</p>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/combination/combination_put_the_RedBull_can_in_the_green_plate_1_41_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Put RedBull can in green plate</p>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/combination/combination_place_the_yellow_block_in_the_purple_plate_4_41_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Place yellow block in purple plate</p>
-                </div>
-            </div>
-          </div>
-
-          <!-- Height Section -->
-          <h3 class="title is-4 has-text-centered">Height</h3>
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/height/height_press_sanitizer_2_17_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Press sanitizer</p>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/height/height_put_the_soda_can_in_the_bottom_shelf_3_41_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Put soda can on bottom shelf</p>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/height/height_place_the_red_block_in_the_blue_plate_1_46_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Place red block in blue plate</p>
-                </div>
-            </div>
-          </div>
-
-          <!-- Category Section -->
-          <h3 class="title is-4 has-text-centered">Category</h3>
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/category/category_put_the_peach_in_the_bottom_shelf_6_43_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Put peach on bottom shelf</p>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/category/category_place_the_bottle_in_the_blue_plate_3_42_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Place bottle in blue plate</p>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="box">
-                    <video width="100%" controls>
-                        <source src="static/videos/real_reduce_size/category/category_put_the_panda_in_the_lower_drawer_1_69_caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="has-text-centered">Put panda in lower drawer</p>
-                </div>
-            </div>
-          </div>
-
-          <h2 class="title is-3 has-text-centered">Failure Cases</h2>
+          <!-- Real-World Experiments -->
+          <h2 class="title is-3 has-text-centered" style="margin-top: 2rem;">Real-World Experiments</h2>
           <p class="has-text-justified">
-          Although our method outperforms baseline methods in the Category setting, its absolute success rate is not high. 
-          We show some failure cases below.
-
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/real_reduce_size/failure/category_place_the_bread_in_the_green_plate_4_52_caption.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Place bread in green plate</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/real_reduce_size/failure/category_put_the_apple_in_the_top_shelf_2_54_caption.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Put apple on top shelf</p>
-              </div>
-            </div>
-            <div class="column is-one-third">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/real_reduce_size/failure/category_put_the_peach_in_the_bottom_shelf_5_22_caption.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Put peach on bottom shelf</p>
-              </div>
-            </div>
-          </div>
-
-
-
-          We believe this relatively low performance is not due to BridgeVLA forgetting the knowledge gained from pre-training, 
-          as it still predicts heatmaps accurately when provided with samples from the pre-training dataset after fine-tuning (see Fig.5).
-          Instead, we hypothesize that the reduced performance stems from two factors: 
-          1) The images in the pre-training dataset are captured from third-person views, which differ significantly from the projection images in our robot data;
-          2) The pre-training task focuses solely on object localization, whereas manipulation involves predicting keypoints that do not correspond to an object. 
-          Exploring how to fully utilise such preserved pre-training knowledge for manipulation is an interesting direction for future research.
+            We perform real-robot experiments with a Franka Research 3 robot arm equipped with a parallel-jaw gripper and a ZED 2i camera. We evaluate on four tasks: 1) Close the upper drawer, 2) Put the redbull on the plate, 3) Put the lion on the top shelf, and 4) Stand the coke can up. We fine-tune both OpenVLA-OFT and CogACT on each task using 50 expert trajectories and evaluate each task with 20 test rollouts.
+          </p>
+          <p class="has-text-justified">
+            For <strong>OpenVLA-OFT</strong>, UAOR achieves consistent performance improvements across all four tasks, with the average success rate increasing from 55.0% to 72.5% (<strong>+31.8%</strong> relative). The largest relative gain appears on the most challenging task, Stand the coke can up (+44.4% relative). For <strong>CogACT</strong>, UAOR boosts the average success rate from 63.8% to 78.8% (<strong>+23.5%</strong> relative). Notably, in the Put the redbull on the plate task, UAOR increases the success rate by an absolute 20%.
           </p>
 
           <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
             <div class="content has-text-centered">
-              <img src="static/images/predicted_heatmap.png" alt="grade-lv" width="100%" style="max-width: 1200px; height: auto;"/>
-              <p>Figure 5: Prediction on pre-training data after fine-tuning.</p>
+              <img src="static/images/real.png" alt="Real-World Results" width="100%" style="max-width: 1200px; height: auto;"/>
+              <p>Figure 3: Real-world setup and results.</p>
             </div>
           </div>
 
-        
+          <!-- Real-World Videos -->
+          <h3 class="title is-4 has-text-centered">Real-World Task Demonstrations (OpenVLA-OFT w/ UAOR)</h3>
+
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <div class="box">
+                <video width="100%" controls>
+                  <source src="static/videos/real_world/Close_upper_drawer.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="has-text-centered">Close the upper drawer</p>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="box">
+                <video width="100%" controls>
+                  <source src="static/videos/real_world/Put_the_redbull_on_the_plate.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="has-text-centered">Put the redbull on the plate</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <div class="box">
+                <video width="100%" controls>
+                  <source src="static/videos/real_world/Put_the_lion_on_the_top_shelf.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="has-text-centered">Put the lion on the top shelf</p>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="box">
+                <video width="100%" controls>
+                  <source src="static/videos/real_world/Stand_the_coke_can_up.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="has-text-centered">Stand the coke can up</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -1068,9 +471,7 @@
 </section>
 
 
-
-
-</section>
+<!-- Citation -->
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
     <h1 class="title is-1 mathvista_other" id="citation">Citation</h1>
@@ -1083,13 +484,11 @@
       <div class="column is-four-fifths">
         <div class="content">
           <pre><code>
-@misc{li2025bridgevla,
-    title={BridgeVLA: Input-Output Alignment for Efficient 3D Manipulation Learning with Vision-Language Models},
-    author={Peiyan Li and Yixiang Chen and Hongtao Wu and Xiao Ma and Xiangnan Wu and Yan Huang and Liang Wang and Tao Kong and Tieniu Tan},
-    year={2025},
-    eprint={2506.07961},
-    archivePrefix={arXiv},
-    primaryClass={cs.RO}
+@article{yang2026uaor,
+    title={UAOR: Uncertainty-aware Observation Reinjection for Vision-Language-Action Models},
+    author={Jiabing Yang and Yixiang Chen and Yuan Xu and Peiyan Li and Xiangnan Wu and Zichen Wen and Bowen Fang and Tao Yu and Zhengbo Zhang and Yingda Li and Kai Wang and Jing Liu and Nianfeng Liu and Yan Huang and Liang Wang},
+    year={2026},
+    journal={arXiv preprint}
 }
 </code></pre>
         </div>
@@ -1104,38 +503,33 @@
   <style>
       pre {
         background-color: #f4f4f4;
-        padding: 5px; /* Adjust padding to 5px */
+        padding: 5px;
         border: 1px solid #ddd;
         border-radius: 5px;
-        overflow-x: auto; /* Allow horizontal scrolling */
+        overflow-x: auto;
     }
     code {
         font-family: Consolas, "Courier New", monospace;
-        color: #d63384; /* Code text color */
+        color: #d63384;
     }
   </style>
-
-
   </div>
 </section>
 
 
 <footer class="footer">
-  <!-- <div class="container"> -->
     <div class="content has-text-centered">
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p style="text-align: center;">
-            This website is adapted from <a href="https://mm-rlhf.github.io/">MM-RLHF</a> and <a href="https://video-mme.github.io/">Video-MME</a>.
+            This website is adapted from <a href="https://bridgevla.github.io/">BridgeVLA</a> and <a href="https://video-mme.github.io/">Video-MME</a>.
           </p>
         </div>
       </div>
     </div>
-  <!-- </div> -->
 </footer>
 
 </body>
 </html>
-
