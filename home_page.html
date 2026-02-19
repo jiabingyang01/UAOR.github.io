@@ -218,6 +218,12 @@
             We introduce <strong>Action Entropy</strong>, a VLA-specific metric that quantifies layer-wise uncertainty via the entropy of action-related output distributions. For each transformer layer, we project FFN outputs through the LM Head and compute entropy over action/condition tokens. Higher action entropy indicates greater uncertainty, reflecting the model's gradual "forgetting" of observation information during forward inference.
           </p>
 
+          <div class="box" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="content has-text-centered">
+              <img src="static/images/entropy.png" alt="Layer-wise Uncertainty" width="100%" style="max-width: 1200px; height: auto;"/>
+            </div>
+          </div>
+
           <h4 class="title is-5 mt-5 mb-3">Observation Reinjection with FFN</h4>
           <p>
             When uncertainty at layer &ell; exceeds a threshold &gamma;, we reinject observation features into the FFN of the subsequent layer (&ell;+1). Concretely, we treat the encoded observation features as a key-value memory. We use the hidden states entering the FFN at layer &ell;+1 as queries to attend over this memory via an activation-weighted retrieval. The retrieved features are then blended with the original FFN output using a blending ratio &alpha;. This allows the model to dynamically "re-attend" to the observation when confusion arises, without halting or backtracking the inference.
@@ -266,72 +272,44 @@
 
           <!-- Row 1: Spatial + Object -->
           <div class="columns is-multiline">
-            <div class="column is-one-quarter">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
                   <source src="static/videos/LIBERO/LIBERO-Spatial-pick up the black bowl from table center and place it on the plate.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
                 </video>
                 <p class="has-text-centered"><strong>Spatial:</strong> Pick up the black bowl from table center and place it on the plate</p>
               </div>
             </div>
-            <div class="column is-one-quarter">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/LIBERO/LIBERO-Spatial-pick up the black bowl on the wooden cabinet and place it on the plate.mp4" type="video/mp4">
-                </video>
-                <p class="has-text-centered"><strong>Spatial:</strong> Pick up the black bowl on the wooden cabinet and place it on the plate</p>
-              </div>
-            </div>
-            <div class="column is-one-quarter">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
                   <source src="static/videos/LIBERO/LIBERO-Object-pick up the alphabet soup and place it in the basket.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
                 </video>
                 <p class="has-text-centered"><strong>Object:</strong> Pick up the alphabet soup and place it in the basket</p>
-              </div>
-            </div>
-            <div class="column is-one-quarter">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/LIBERO/LIBERO-Object-pick up the orange juice and place it in the basket.mp4" type="video/mp4">
-                </video>
-                <p class="has-text-centered"><strong>Object:</strong> Pick up the orange juice and place it in the basket</p>
               </div>
             </div>
           </div>
 
           <!-- Row 2: Goal + Long -->
           <div class="columns is-multiline">
-            <div class="column is-one-quarter">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
                   <source src="static/videos/LIBERO/LIBERO-Goal-open the middle drawer of the cabinet.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
                 </video>
                 <p class="has-text-centered"><strong>Goal:</strong> Open the middle drawer of the cabinet</p>
               </div>
             </div>
-            <div class="column is-one-quarter">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/LIBERO/LIBERO-Goal-put the wine bottle on the rack.mp4" type="video/mp4">
-                </video>
-                <p class="has-text-centered"><strong>Goal:</strong> Put the wine bottle on the rack</p>
-              </div>
-            </div>
-            <div class="column is-one-quarter">
+            <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
                   <source src="static/videos/LIBERO/LIBERO-Long-put both the alphabet soup and the tomato sauce in the basket.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
                 </video>
                 <p class="has-text-centered"><strong>Long:</strong> Put both the alphabet soup and the tomato sauce in the basket</p>
-              </div>
-            </div>
-            <div class="column is-one-quarter">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/LIBERO/LIBERO-Long-put the yellow and white mug in the microwave and close it.mp4" type="video/mp4">
-                </video>
-                <p class="has-text-centered"><strong>Long:</strong> Put the yellow and white mug in the microwave and close it</p>
               </div>
             </div>
           </div>
