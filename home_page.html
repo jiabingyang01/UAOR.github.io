@@ -197,24 +197,6 @@
   </div>
 </section>
 
-<!-- Figure 1: Overview -->
-<section class="section" style="padding-top: 0;">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-          <div class="box" style="margin-top: 0; margin-bottom: 1rem;">
-            <div class="content has-text-centered">
-              <img src="static/images/teaser.png" alt="UAOR Overview" width="100%" style="max-width: 1200px; height: auto;"/>
-              <p>Figure 1: Overall framework of UAOR. We compute action entropy at layer &ell; to estimate uncertainty. If it exceeds a threshold &gamma;, we reinject observation features into the next layer's FFN via a key-value retrieval mechanism.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- METHOD SECTION -->
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
@@ -289,8 +271,7 @@
           <!-- LIBERO Videos -->
           <h3 class="title is-4 has-text-centered">LIBERO Task Demonstrations (OpenVLA-OFT w/ UAOR)</h3>
 
-          <!-- Row 1: Spatial -->
-          <h4 class="title is-5 has-text-centered" style="margin-bottom: 0.5rem;">LIBERO-Spatial</h4>
+          <!-- Row 1: Spatial + Object -->
           <div class="columns is-multiline">
             <div class="column is-half">
               <div class="box">
@@ -298,45 +279,21 @@
                   <source src="static/videos/LIBERO/LIBERO-Spatial-pick up the black bowl from table center and place it on the plate.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Pick up the black bowl from table center and place it on the plate</p>
+                <p class="has-text-centered"><strong>Spatial:</strong> Pick up the black bowl from table center and place it on the plate</p>
               </div>
             </div>
-            <div class="column is-half">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/LIBERO/LIBERO-Spatial-pick up the black bowl on the wooden cabinet and place it on the plate.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Pick up the black bowl on the wooden cabinet and place it on the plate</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 2: Object -->
-          <h4 class="title is-5 has-text-centered" style="margin-bottom: 0.5rem;">LIBERO-Object</h4>
-          <div class="columns is-multiline">
             <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
                   <source src="static/videos/LIBERO/LIBERO-Object-pick up the alphabet soup and place it in the basket.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Pick up the alphabet soup and place it in the basket</p>
-              </div>
-            </div>
-            <div class="column is-half">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/LIBERO/LIBERO-Object-pick up the orange juice and place it in the basket.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Pick up the orange juice and place it in the basket</p>
+                <p class="has-text-centered"><strong>Object:</strong> Pick up the alphabet soup and place it in the basket</p>
               </div>
             </div>
           </div>
 
-          <!-- Row 3: Goal -->
-          <h4 class="title is-5 has-text-centered" style="margin-bottom: 0.5rem;">LIBERO-Goal</h4>
+          <!-- Row 2: Goal + Long -->
           <div class="columns is-multiline">
             <div class="column is-half">
               <div class="box">
@@ -344,39 +301,16 @@
                   <source src="static/videos/LIBERO/LIBERO-Goal-open the middle drawer of the cabinet.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Open the middle drawer of the cabinet</p>
+                <p class="has-text-centered"><strong>Goal:</strong> Open the middle drawer of the cabinet</p>
               </div>
             </div>
-            <div class="column is-half">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/LIBERO/LIBERO-Goal-put the wine bottle on the rack.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Put the wine bottle on the rack</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 4: Long -->
-          <h4 class="title is-5 has-text-centered" style="margin-bottom: 0.5rem;">LIBERO-Long</h4>
-          <div class="columns is-multiline">
             <div class="column is-half">
               <div class="box">
                 <video width="100%" controls>
                   <source src="static/videos/LIBERO/LIBERO-Long-put both the alphabet soup and the tomato sauce in the basket.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <p class="has-text-centered">Put both the alphabet soup and the tomato sauce in the basket</p>
-              </div>
-            </div>
-            <div class="column is-half">
-              <div class="box">
-                <video width="100%" controls>
-                  <source src="static/videos/LIBERO/LIBERO-Long-put the yellow and white mug in the microwave and close it.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="has-text-centered">Put the yellow and white mug in the microwave and close it</p>
+                <p class="has-text-centered"><strong>Long:</strong> Put both the alphabet soup and the tomato sauce in the basket</p>
               </div>
             </div>
           </div>
@@ -418,13 +352,6 @@
           <p class="has-text-justified">
             For <strong>OpenVLA-OFT</strong>, UAOR achieves consistent performance improvements across all four tasks, with the average success rate increasing from 55.0% to 72.5% (<strong>+31.8%</strong> relative). The largest relative gain appears on the most challenging task, Stand the coke can up (+44.4% relative). For <strong>CogACT</strong>, UAOR boosts the average success rate from 63.8% to 78.8% (<strong>+23.5%</strong> relative). Notably, in the Put the redbull on the plate task, UAOR increases the success rate by an absolute 20%.
           </p>
-
-          <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
-            <div class="content has-text-centered">
-              <img src="static/images/real_robot_setup.png" alt="Real-World Setup" width="100%" style="max-width: 800px; height: auto;"/>
-              <p>Real-world setup: Franka Research 3 robot arm with ZED 2i camera and 3D mouse.</p>
-            </div>
-          </div>
 
           <div class="box" style="margin-top: 1rem; margin-bottom: 1rem;">
             <div class="content has-text-centered">
